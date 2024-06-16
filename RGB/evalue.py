@@ -205,7 +205,7 @@ if __name__ == '__main__':
         prompt = yaml.load(open('config/instruction_fact.yaml', 'r'), Loader=yaml.FullLoader)[args.dataset[:2]]
         resultpath = resultpath + '/fact'
     else:
-        prompt = yaml.load(open('config/instruction.yaml', 'r'), Loader=yaml.FullLoader)[args.dataset[:2]]
+        prompt = yaml.load(open('/home/whr-a/llm_34/RGB/config/ins_fewshot_more_positive.yaml', 'r'), Loader=yaml.FullLoader)[args.dataset[:2]]
 
     system = prompt['system']
     instruction = prompt['instruction']

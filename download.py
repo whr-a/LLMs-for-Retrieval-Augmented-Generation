@@ -1,11 +1,8 @@
-from langchain_community.embeddings import HuggingFaceBgeEmbeddings
+from huggingface_hub import HfFolder, snapshot_download
+from pathlib import Path
+HfFolder.save_token('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')
+mistral_models_path = "/home/whr-a/mistral_models/7B-v0.3"
 
-model_name = "BAAI/bge-small-en"
-model_kwargs = {"device": "cpu"}
-encode_kwargs = {"normalize_embeddings": True}
-hf = HuggingFaceBgeEmbeddings(
-    model_name=model_name, model_kwargs=model_kwargs, encode_kwargs=encode_kwargs
-)
+# mistral_models_path.mkdir(parents=True, exist_ok=True)
 
-embedding = hf.embed_query("hi this is harrison")
-print(len(embedding))
+snapshot_download(repo_id="mistralai/Mistral-7B-v0.3", allow_patterns=["params.json", "consolidated.safetensors", "tokenizer.model.v3"], local_dir=mistral_models_path)

@@ -1,0 +1,51 @@
+
+en:
+  system: "You are an accurate and reliable AI assistant that can answer questions with the help of external documents. Please note that external documents may contain noisy or factually incorrect information. If the information in the document contains the correct answer, you will give an accurate answer. If the information in the document does not contain the answer, you will generate ’I can not answer the question because of the insufficient information in documents.‘. If there are inconsistencies with the facts in some of the documents, please generate the response 'There are factual errors in the provided documents.' and provide the correct answer."
+
+  instruction: "
+  Here are some exapmles:
+
+  Document:
+  The Nobel Prize in Literature for 2022 is awarded to the French author Annie Ernaux, for the courage and clinical acuity.
+  The Nobel Prize in Literature for 2021 is awarded to the novelist Abdulrazak Gurnah, born in Zanzibar and active in the UK.
+  Question:
+  Who was awarded the 2022 Nobel prize in literature?
+  Answer:
+  Annie Ernaux.
+
+  Document:
+  The Nobel Prize in Literature for 2021 is awarded to the novelist Abdulrazak Gurnah, born in Zanzibar and active in the UK.
+  The 2020 Nobel Laureate in Literature, poet Louise Glück, has written both poetry and essays about poetry. Since her debut in 1968, she has published 12 collections of poetry, as well as a collection of essays on poetry. She has received numerous awards for her work, including the Pulitzer Prize, the National Book Award, and the Bollingen Prize for Poetry.
+  Question:
+  Who was awarded the 2022 Nobel prize in literature?
+  Answer:
+  I can not answer the question because of the insufficient information in documents.
+
+  Document:
+  On May 18th, 2023, OpenAI introduced its own ChatGPT app for iOS, allowing users to chat with the AI model. The app is designed to be user-friendly and accessible to a wide audience. It is available for download on the App Store and Google Play Store. The ChatGPT app is powered by OpenAI's GPT-4 model, which is known for its conversational abilities and natural language understanding. The app is free to use and does not require any subscriptions or in-app purchases. Users can chat with the AI model on a variety of topics, ask questions, and engage in conversations. The ChatGPT app is part of OpenAI's efforts to make AI more accessible and user-friendly.
+  That changed on March 1, when OpenAI announced the release of API access to ChatGPT and Whisper, two of its most popular models. The API access allows developers to integrate the models into their own applications and services, enabling them to build conversational AI experiences for their users. The API access is available to developers through OpenAI's platform, and it includes documentation, code samples, and support resources to help developers get started. The API access is part of OpenAI's efforts to make its models more widely available and to empower developers to build innovative AI applications.
+  Question:
+  When were the ChatGPT app for iOS and ChatGPT api launched?
+  Answer:
+  May 18 and March 1.
+
+  Document:
+  On September 8, 2022, Elizabeth II passed away peacefully at Balmoral Castle in Scotland at the age of 96. Earlier that day, news broke that the Queen's health was worrying, and the parliamentary meeting was interrupted. Prince Charles and his wife Camilla, Charles' eldest son Prince William, and Prince Harry and other royal relatives all rushed to the summer resort where the Queen was. At 19:30 that evening, Buckingham Palace in London announced the news of Queen Elizabeth's death. The new King of the United Kingdom is her eldest son Charles III. Elizabeth II, the Queen of England who reigned for 70 years, the mother of four children, and one of the most influential figures in the 20th century and contemporary world, passed away.
+  To provide you with a better service, we use Cookies. For more information, please refer to our data protection statement. An era has come to an end, and the whole of Britain is in mourning. Queen Elizabeth II of the United Kingdom died on September 8, 2022 at the age of 96. The British love their queen, and for many people, she is the embodiment of Britain. Elizabeth II has established great prestige for the British monarchy. Queen Elizabeth II of the United Kingdom died on September 8, 2022 at the age of 96 (Deutsche Welle Chinese Network) The British royal family Buckingham Palace announced the death of Queen Elizabeth II on the evening of September 8 local time. Earlier in the day, it was reported that the queen's health was worrying. 
+  At about 2 a.m. on April 21, 1926, Elizabeth II was born by caesarean section at her grandparents' home at 17 Bruton Street, Mayfair, London.Her great-great-grandparents were Prince Albert and Queen Victoria, her great-great-grandparents were Edward VII and Queen Alexandra of Denmark, her grandparents were King George V and Queen Mary of the United Kingdom, and her parents were George VI and Queen Elizabeth the Queen Mother, who were then the Duke and Duchess of York and later became monarchs. According to the order of succession to the British throne, Elizabeth became the third in line to the throne after her father after her birth.
+  Question:
+  When did Queen Elizabeth II pass away?
+  Answer:
+  September 8, 2022.
+
+  Document:        
+  The final was held at the Lusail Stadium in Qatar, with Argentina facing defending champions France. The match ended in a 3-3 draw after regular time, leading to extra time. Argentina then defeated France 4-2 in a penalty shootout, winning the championship. This victory marked Argentina's second World Cup title, following their win in 1986, and it had been 36 years since their last World Cup triumph. Croatia defeated Morocco 2-1 to claim third place. The 2022 World Cup also saw the introduction of Semi-automated Offside Technology (SAOT), which uses artificial intelligence to assist VAR officials in making faster offside calls.
+  Before the start of the tournament, criticism of Qatar reached its peak in Europe and the Americas, leading to the 'Sleeve Badge Action' by seven European representative teams and widespread boycott sentiments in Europe and the Americas. The criticism and controversy surrounding Qatar even became a topic of discussion at the opening ceremony.
+  This World Cup made Qatar the smallest country ever to host the event. The last country to hold this record was Switzerland, which hosted the 1954 World Cup and has a land area more than three times that of Qatar.
+  At that World Cup, South Korea lost 2-3 to Turkey and finished fourth. South Korea will compete in the next round of the finals in Group H with Portugal, Ghana, and Uruguay.
+  Question:
+  The teams in the final of the Qatar World Cup.
+  Answer:
+  Argentina and France.
+
+  Document:\n{DOCS} \n\nQuestion:\n{QUERY} \n Please provide the answer."
